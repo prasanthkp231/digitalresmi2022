@@ -32,7 +32,7 @@
     <link rel="stylesheet" type="text/css" href="css/preview.css"><!-- Uncomment if you are specifically targeting less enabled mobile browsers
 	<link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
 
-    <link href='//fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
     <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
     <script src="js/modernizr-1.6.min.js"></script>
 	<style>
@@ -64,10 +64,10 @@
     <img id='click_to_open' src="images/click_to_open.png" alt='click to open' />
     <div id='features'>
         <div id='cover1' class='feature pagefx hardpage'>		
-			<img class="page" src="pages/0001.jpg">
+			<img class="page" src="pages/bulletin adobe_page-0001.jpg">
         </div>
        <div class='feature pagefx hardpage'>
-		<img class="page" src="pages/0002.jpg">
+		<img class="page" src="pages/bulletin adobe_page-0002.jpg">
         </div>
 
     </div> <!-- features-->
@@ -84,7 +84,7 @@
 <!-- Javascript at the bottom for fast page loading -->
 
 <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>!window.jQuery && document.write(unescape('%3Cscript src="./js/libs/jquery-1.9.1.min.js"%3E%3C/script%3E'))</script>
 
 <script type="text/javascript" src="wow_book.min.js"></script>
@@ -93,14 +93,16 @@
     $(document).ready(function() {
 		for(i=3;i<=9;i++){
 			$('#features').append('<div class="responsive feature">' +
-									'<img class="page" src="pages/000' + i +'.jpg">' +
+									'<img class="page" src="pages/bulletin adobe_page-000' + i +'.jpg">' +
 								'</div>');
 		}
-		for(i=10;i<=31;i++){
+		for(i=10;i<=53;i++){
 			$('#features').append('<div class="responsive feature">' +
-									'<img class="page" src="pages/00' + i +'.jpg">' +
+									'<img class="page" src="pages/bulletin adobe_page-00' + i +'.jpg">' +
 								'</div>');
 		}
+		$('#features').append('<div class="responsive feature"></div>');
+		$('#features').append('<div class="responsive feature"></div>');
 	    $('#features').append(' <div class="last_cover"><img class="page" src="images/cover_last.png" width="100%" height="100%" /></div>');
         $('#features').wowBook({
             height : 500
